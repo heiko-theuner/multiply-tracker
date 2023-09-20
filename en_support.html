@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="robots" content="noindex" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>Help</title>
+        <script>
+            window.addEventListener('scroll', function() {
+                var topDiv = document.querySelector('.topAppBar');
+                var contentOffsetTop = document.querySelector('.content').offsetTop;
+
+                if (window.pageYOffset > contentOffsetTop) {
+                    topDiv.classList.add('scrolled');
+                } else {
+                    topDiv.classList.remove('scrolled');
+                }
+            });
+        </script>
+        <style>
+            html {
+                overscroll-behavior: none;
+            }
+            
+            body {
+                background-color: rgb(252, 252, 255);
+                color: rgb(26, 28, 30);
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                font-size: 16px;
+                margin-right: 16px;
+                margin-left: 16px;
+            }
+
+            /* Dark mode styles */
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background-color: rgb(26, 28, 30);
+                    color: rgb(226, 226, 229);
+                }
+            }
+
+            .topAppBar {
+                position: fixed;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                background-color: rgb(252, 252, 255);
+                z-index: 9999;
+                text-align: center;
+                font-size: 22px;
+                height: 64px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 64px;
+                transition: background-color 0.3s ease;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .topAppBar {
+                    background-color: rgb(26, 28, 30);
+                }
+            }
+
+            .card {
+                max-width: 800px;
+                margin: 0 auto;
+                border-radius: 12px;
+                padding: 16px;
+                box-sizing: border-box;
+                border: 1px solid rgb(194, 199, 207);
+                color: rgb(66, 71, 78);
+                background-color: rgb(222, 227, 235);
+                margin-bottom: 16px;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .card {
+                    border: 1px solid rgb(66, 71, 78);
+                    color: rgb(194, 199, 207);
+                    background-color: rgb(66, 71, 78);
+                }
+            }
+
+            .card p {
+                margin-top: 2px;
+                margin-bottom: 0px;
+            }
+
+            .card p strong {
+                color: rgb(26, 28, 30);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .card p strong {
+                    color: rgb(226, 226, 229);
+                }
+            }
+
+            .title {
+                font-size: 22px;
+                margin-bottom: 2px;
+                color: rgb(26, 28, 30);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .title {
+                    color: rgb(226, 226, 229);
+                }
+            }
+
+            .subtitle {
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 16px;
+                margin-bottom: 16px;
+                color: rgb(26, 28, 30);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                .subtitle {
+                    color: rgb(226, 226, 229);
+                }
+            }
+
+            a {
+                color: rgb(0, 99, 155);
+                text-decoration: none;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                a {
+                    color: rgb(151, 203, 255);
+                }
+            }
+
+            .topAppBar.scrolled {
+                background-color: rgb(233, 241, 248);
+            }
+            
+            @media (prefers-color-scheme: dark) {
+                .topAppBar.scrolled {
+                    background-color: rgb(35, 41, 47);
+                }
+            }
+
+            .content {
+                padding-top: 64px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topAppBar">
+            Help
+        </div>
+        <div class="content">
+            <div class="card"><div class="title">What is Multiply Tracker?</div><p>Multiply Tracker is a free app designed to help users improve multiplication skills. Customize learning, track progress, and support development through donations.</p></div><div class="card"><div class="title">Why is Multiply Tracker free?</div><p>Multiply Tracker is ad-free and subscription-free. It's our commitment to offer a high-quality learning experience without any financial barriers.</p></div><div class="card"><div class="title">How can I support the developer?</div><p>If you love Multiply Tracker, you can make a small donation through in-app purchases. Your contribution helps maintain the app's quality and keeps it free for all users.</p></div><div class="card"><div class="title">Is my data safe?</div><p>Your privacy is a priority. Tracking is off by default, and we don't collect personal data without your consent. Your information is secure.</p></div><div class="card"><div class="title">Can I customize my learning experience?</div><p>Absolutely! Multiply Tracker lets you tailor your training to your preferences, whether you prefer text or audio-only tasks.</p></div><div class="card"><div class="title">Are there any ads or subscriptions?</div><p>No, Multiply Tracker is completely ad-free and doesn't require any subscriptions. We're dedicated to providing an uninterrupted learning environment.</p></div>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-items: center; height: 64px">
+            <div style="display: flex;">
+                <a style="margin-right: 32px;" href="en_imprint.html">Imprint</a>
+                <a style="margin-right: 32px;" href="en_privacyPolicy.html">Privacy Policy</a>
+                <a href="en_support.html">Help</a>
+            </div>
+        </div>
+    </body>
+</html>

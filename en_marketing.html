@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiply Tracker</title>
+        <style>
+            body {
+                background-color: rgb(252, 252, 255);
+                color: rgb(26, 28, 30);
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                font-size: 16px;
+                margin-right: 16px;
+                margin-left: 16px;
+            }
+
+            /* Dark mode styles */
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background-color: rgb(26, 28, 30);
+                    color: rgb(226, 226, 229);
+                }
+            }
+
+            .container {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+                display: flex;
+                align-items: center; /* Align content vertically */
+            }
+
+            .app-icon {
+                width: 100px;
+                height: 100px;
+                margin-right: 32px;
+                margin-bottom: 16px;
+                border-radius: 10px;
+                align-self: flex-start; /* Align icon to the top */
+            }
+
+            .app-info {
+                flex: 1; /* Take remaining space */
+            }
+
+            .app-title {
+                font-size: 22px;
+                margin: 0;
+            }
+
+            .app-subtitle {
+                font-size: 16px;
+                font-weight: bold;
+                margin: 5px 0;
+            }
+
+            .app-description {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            .screenshots-container {
+                width: 100%;
+                overflow-x: scroll;
+                white-space: nowrap;
+                margin-bottom: 32px;
+                text-align: center;
+            }
+
+            .screenshot {
+                display: inline-block;
+                width: 322px;
+                height: 699px;
+                margin: 0 16px;
+                border-radius: 10px;
+            }
+
+            .imprint-link {
+                font-size: 12px;
+                text-align: center;
+            }
+
+            a {
+                color: rgb(0, 99, 155);
+                text-decoration: none;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                a {
+                    color: rgb(151, 203, 255);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="en_app_icon.png" alt="App Icon" class="app-icon">
+                <div class="app-info">
+                    <div class="app-title">Multiply Tracker</div>
+                    <div class="app-subtitle">Master Multiplication Tables</div>
+                    <div class="app-description">Improve your multiplication skills with Multiply Tracker. Customize your learning, track your progress, and enjoy an ad-free experience with donation support.</div>
+                </div>
+        </div>
+        <div class="screenshots-container">
+            <img src="en_screenshot_1.png" class="screenshot" />
+            <img src="en_screenshot_2.png" class="screenshot" />
+            <img src="en_screenshot_3.png" class="screenshot" />
+            <img src="en_screenshot_4.png" class="screenshot" />
+
+        </div>
+
+        <div style="display: flex; justify-content: center; align-items: center; height: 64px">
+            <div style="display: flex;">
+                <a style="margin-right: 32px;" href="en_imprint.html">Imprint</a>
+                <a style="margin-right: 32px;" href="en_privacyPolicy.html">Privacy Policy</a>
+                <a href="en_support.html">Help</a>
+            </div>
+        </div>
+    </body>
+</html>
+
